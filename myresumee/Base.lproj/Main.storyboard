@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="-4474" y="656"/>
         </scene>
-        <!--Main Home View Controller-->
+        <!--Kevin FICHOU-->
         <scene sceneID="aWr-Eg-Fba">
             <objects>
                 <viewController id="oKW-pH-EvK" customClass="MainHomeViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
@@ -329,7 +329,7 @@
                             <constraint firstItem="kjk-8b-547" firstAttribute="centerX" secondItem="kcN-z0-I66" secondAttribute="centerX" id="unZ-LG-aLl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="z3i-oM-9zf"/>
+                    <navigationItem key="navigationItem" title="Kevin FICHOU" id="z3i-oM-9zf"/>
                     <connections>
                         <outlet property="abilitiesRandomView" destination="ooy-Nh-OTj" id="jqb-PB-8Yq"/>
                         <outlet property="currentJobView" destination="kcN-z0-I66" id="fjZ-07-i6o"/>

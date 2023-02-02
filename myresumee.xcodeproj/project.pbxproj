@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		84557D85298BFB2C000BB5E2 /* RandomAbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */; };
 		84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D86298BFE02000BB5E2 /* CurrentJobView.swift */; };
+		84557D89298C12C9000BB5E2 /* MyResumeeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */; };
+		84557D8B298C13D4000BB5E2 /* MyResumeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D8A298C13D4000BB5E2 /* MyResumeeNavigationController.swift */; };
 		84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6BF50298AB21500B6D3DD /* AppDelegate.swift */; };
 		84C6BF53298AB21500B6D3DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6BF52298AB21500B6D3DD /* SceneDelegate.swift */; };
 		84C6BF58298AB21500B6D3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C6BF56298AB21500B6D3DD /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAbilitiesView.swift; sourceTree = "<group>"; };
 		84557D86298BFE02000BB5E2 /* CurrentJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJobView.swift; sourceTree = "<group>"; };
+		84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeeNavigationBar.swift; sourceTree = "<group>"; };
+		84557D8A298C13D4000BB5E2 /* MyResumeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeeNavigationController.swift; sourceTree = "<group>"; };
 		84C6BF4D298AB21500B6D3DD /* myresumee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myresumee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C6BF50298AB21500B6D3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C6BF52298AB21500B6D3DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				84C6BF6A298AB9BE00B6D3DD /* MainHomeViewController.swift */,
+				84557D8A298C13D4000BB5E2 /* MyResumeeNavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 				84C6BF70298ABDB300B6D3DD /* SelectedView.swift */,
 				84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */,
 				84557D86298BFE02000BB5E2 /* CurrentJobView.swift */,
+				84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			files = (
 				84C6BF71298ABDB300B6D3DD /* SelectedView.swift in Sources */,
 				84C6BF6D298ABA3500B6D3DD /* HeaderView.swift in Sources */,
+				84557D8B298C13D4000BB5E2 /* MyResumeeNavigationController.swift in Sources */,
 				84C6BF6B298AB9BE00B6D3DD /* MainHomeViewController.swift in Sources */,
 				84557D85298BFB2C000BB5E2 /* RandomAbilitiesView.swift in Sources */,
 				84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */,
@@ -200,6 +207,7 @@
 				84C6BF74298AC15200B6D3DD /* KFColors.swift in Sources */,
 				84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */,
 				84C6BF5B298AB21500B6D3DD /* myresumee.xcdatamodeld in Sources */,
+				84557D89298C12C9000BB5E2 /* MyResumeeNavigationBar.swift in Sources */,
 				84C6BF53298AB21500B6D3DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

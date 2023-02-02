@@ -34,6 +34,18 @@ class MainHomeViewController: UIViewController {
         self.licenceSelectionView.setSelectedView()
         self.retexSelectionView.setSelectedView()
         self.hobbiesSelectionView.setSelectedView()
+        
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = .kfMidBlue
+        let titleAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24, weight: .bold),
+                                NSAttributedString.Key.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = titleAttribute as [NSAttributedString.Key : Any]
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
+        self.headerView.titleHeader.isHidden = true
     }
 // MARK: - Methods
     
