@@ -11,7 +11,6 @@ class HeaderView: UIView {
 
 // MARK: - IBOutlets
     
-    @IBOutlet weak var titleHeader: UILabel!
     @IBOutlet weak var subtitleHeader: UILabel!
     @IBOutlet weak var headerPictureView: HeaderPictureView!
     
@@ -25,13 +24,14 @@ class HeaderView: UIView {
     private let _subtitleMessage = "Développeur informatique en alternance à CESI Rouen"
     
     override func draw(_ rect: CGRect) {
-        print("headerView draw")
+        UIApplication.shared.keyWindow?.windowScene?.windows.first(where: {$0.isKeyWindow})?.addSubview(self.headerPictureView)
     }
     
     public func setHeaderViewElements() {
         self.setGeneralView()
-        self.setTitle()
         self.setSubtitle()
+        self.headerPictureView.addProfilPicture()
+        self.headerPictureView.layer.zPosition = 100
     }
     
     private func setGeneralView() {
@@ -39,12 +39,6 @@ class HeaderView: UIView {
         self.clipsToBounds = true
         self.layer.cornerRadius = self._radius
         self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-    }
-    
-    private func setTitle() {
-        self.titleHeader.text = self._titleMessage
-        self.titleHeader.font = UIFont.systemFont(ofSize: self._titleFontSize, weight: .bold)
-        self.titleHeader.textAlignment = .center
     }
     
     private func setSubtitle() {

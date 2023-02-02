@@ -22,6 +22,14 @@ class MainHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupInformationsToSelectionViews()
+        
+        let appearance = UITabBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = .kfMidBlue
+        self.tabBarController?.tabBar.standardAppearance = appearance
+        self.tabBarController?.tabBar.scrollEdgeAppearance = appearance
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,8 +52,6 @@ class MainHomeViewController: UIViewController {
         appearance.titleTextAttributes = titleAttribute as [NSAttributedString.Key : Any]
         self.navigationController?.navigationBar.standardAppearance = appearance
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
-        self.headerView.titleHeader.isHidden = true
     }
 // MARK: - Methods
     

@@ -12,10 +12,18 @@
         <scene sceneID="dd6-KZ-zFG">
             <objects>
                 <tabBarController id="vSW-G3-Wxv" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gWH-Pi-wSk">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="gWH-Pi-wSk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance" backgroundImage="contact" stackedItemPositioning="fill" stackedItemWidth="50">
+                            <color key="selectionIndicatorTintColor" systemColor="labelColor"/>
+                        </tabBarAppearance>
+                        <tabBarAppearance key="scrollEdgeAppearance">
+                            <color key="selectionIndicatorTintColor" systemColor="labelColor"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="mfy-C8-zbx" kind="relationship" relationship="viewControllers" id="ZuA-GE-iuS"/>
@@ -25,11 +33,11 @@
             </objects>
             <point key="canvasLocation" x="-4473" y="-164"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="69Z-gH-6wa">
             <objects>
                 <navigationController id="mfy-C8-zbx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="giT-TB-H34"/>
+                    <tabBarItem key="tabBarItem" title="" image="contact" id="giT-TB-H34"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WWD-8n-lLk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,49 +59,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-Py-W9r" customClass="HeaderView" customModule="myresumee" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="108"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kevin FICHOU" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmz-8m-Qm4">
-                                        <rect key="frame" x="0.0" y="20" width="414" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Développeur informatique en alternance au CESI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-1j-ubR">
-                                        <rect key="frame" x="150" y="68.333333333333343" width="259" height="13.333333333333329"/>
+                                        <rect key="frame" x="154.66666666666663" y="27.999999999999996" width="254.33333333333337" height="13.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-us-z3Z" customClass="HeaderPictureView" customModule="myresumee" customModuleProvider="target">
-                                        <rect key="frame" x="27" y="32" width="85" height="57"/>
-                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="57" id="4b5-j2-6g6"/>
-                                            <constraint firstAttribute="width" constant="85" id="xJK-Tn-e12"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="4q2-ZR-i6a"/>
                                     <constraint firstAttribute="trailing" secondItem="ymm-1j-ubR" secondAttribute="trailing" constant="5" id="DiC-RN-zYM"/>
-                                    <constraint firstItem="vmz-8m-Qm4" firstAttribute="leading" secondItem="Qml-Py-W9r" secondAttribute="leading" id="OeU-Pd-WXt"/>
-                                    <constraint firstItem="Hew-us-z3Z" firstAttribute="leading" secondItem="Qml-Py-W9r" secondAttribute="leading" constant="27" id="fyq-i5-PLw"/>
-                                    <constraint firstAttribute="trailing" secondItem="vmz-8m-Qm4" secondAttribute="trailing" id="h2i-7h-EcI"/>
-                                    <constraint firstItem="Hew-us-z3Z" firstAttribute="top" secondItem="Qml-Py-W9r" secondAttribute="top" constant="32" id="jHk-pg-mRs"/>
-                                    <constraint firstItem="vmz-8m-Qm4" firstAttribute="top" secondItem="Qml-Py-W9r" secondAttribute="top" constant="20" id="luZ-m5-yI7"/>
-                                    <constraint firstItem="ymm-1j-ubR" firstAttribute="leading" secondItem="Hew-us-z3Z" secondAttribute="trailing" constant="38" id="pv2-wB-R5y"/>
-                                    <constraint firstItem="ymm-1j-ubR" firstAttribute="top" secondItem="vmz-8m-Qm4" secondAttribute="bottom" constant="28" id="zzC-JO-Z7N"/>
+                                    <constraint firstItem="ymm-1j-ubR" firstAttribute="top" secondItem="Qml-Py-W9r" secondAttribute="top" constant="28" id="wdJ-hs-6t9"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="headerPictureView" destination="Hew-us-z3Z" id="PhY-2k-cf6"/>
                                     <outlet property="subtitleHeader" destination="ymm-1j-ubR" id="C0Y-aU-eEt"/>
-                                    <outlet property="titleHeader" destination="vmz-8m-Qm4" id="0Ma-Nr-ntK"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-us-z3Z" customClass="HeaderPictureView" customModule="myresumee" customModuleProvider="target">
+                                <rect key="frame" x="20" y="68" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Qu-Ra-3iD"/>
+                                    <constraint firstAttribute="height" constant="100" id="DKB-F7-YLU"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-Nh-OTj" customClass="RandomAbilitiesView" customModule="myresumee" customModuleProvider="target">
-                                <rect key="frame" x="40" y="227" width="334" height="100"/>
+                                <rect key="frame" x="40" y="235" width="334" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quelques points forts :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKQ-rf-FHG">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="45"/>
@@ -128,7 +122,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcN-z0-I66" customClass="CurrentJobView" customModule="myresumee" customModuleProvider="target">
-                                <rect key="frame" x="20" y="347" width="374" height="35"/>
+                                <rect key="frame" x="20" y="355" width="374" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poste actuel :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GF0-ab-x6m">
                                         <rect key="frame" x="10" y="0.0" width="138" height="35"/>
@@ -161,7 +155,7 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="kjk-8b-547">
-                                <rect key="frame" x="20" y="412" width="374" height="165"/>
+                                <rect key="frame" x="20" y="420" width="374" height="165"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="r6m-Dk-t1V" customClass="SelectedView" customModule="myresumee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
@@ -232,7 +226,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="6jl-Y9-Z70">
-                                <rect key="frame" x="20" y="597" width="374" height="165"/>
+                                <rect key="frame" x="20" y="605" width="374" height="165"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zl-SN-EZi" customClass="SelectedView" customModule="myresumee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
@@ -308,6 +302,7 @@
                         <viewLayoutGuide key="safeArea" id="UMH-R6-TtJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Hew-us-z3Z" firstAttribute="top" secondItem="UMH-R6-TtJ" secondAttribute="top" constant="-20" id="0Lc-jb-dZ6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ooy-Nh-OTj" secondAttribute="trailing" constant="20" id="0kL-V7-6TK"/>
                             <constraint firstItem="Qml-Py-W9r" firstAttribute="top" secondItem="UMH-R6-TtJ" secondAttribute="top" id="4vH-zC-kfV"/>
                             <constraint firstItem="5Zl-SN-EZi" firstAttribute="height" secondItem="r6m-Dk-t1V" secondAttribute="height" id="5lF-ot-Ffk"/>
@@ -319,8 +314,10 @@
                             <constraint firstItem="ooy-Nh-OTj" firstAttribute="top" secondItem="Qml-Py-W9r" secondAttribute="bottom" constant="39" id="LqV-31-Aht"/>
                             <constraint firstItem="kcN-z0-I66" firstAttribute="centerX" secondItem="Dk4-WF-hb8" secondAttribute="centerX" id="LsD-eL-8cJ"/>
                             <constraint firstItem="6jl-Y9-Z70" firstAttribute="top" secondItem="kjk-8b-547" secondAttribute="bottom" constant="20" id="Nyx-yN-MTg"/>
+                            <constraint firstAttribute="bottom" secondItem="Qml-Py-W9r" secondAttribute="bottom" constant="700" id="P7d-kE-Uzr"/>
                             <constraint firstItem="Qml-Py-W9r" firstAttribute="leading" secondItem="UMH-R6-TtJ" secondAttribute="leading" id="PB5-FN-1d2"/>
                             <constraint firstItem="kcN-z0-I66" firstAttribute="top" secondItem="ooy-Nh-OTj" secondAttribute="bottom" constant="20" id="SG1-kk-fFe"/>
+                            <constraint firstItem="Hew-us-z3Z" firstAttribute="leading" secondItem="UMH-R6-TtJ" secondAttribute="leading" constant="20" id="SYn-6S-hcd"/>
                             <constraint firstItem="kjk-8b-547" firstAttribute="leading" secondItem="kcN-z0-I66" secondAttribute="leading" id="U3h-pt-gPH"/>
                             <constraint firstItem="kjk-8b-547" firstAttribute="centerX" secondItem="Dk4-WF-hb8" secondAttribute="centerX" id="VZJ-sR-oIY"/>
                             <constraint firstItem="kjk-8b-547" firstAttribute="leading" secondItem="6jl-Y9-Z70" secondAttribute="leading" id="dQT-jV-IFX"/>
@@ -346,6 +343,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="contact" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
