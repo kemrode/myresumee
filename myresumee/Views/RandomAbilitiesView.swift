@@ -16,13 +16,14 @@ class RandomAbilitiesView: UIView {
     
 // MARK: - Methods
 
-    override func draw(_ rect: CGRect) {}
+    override func draw(_ rect: CGRect) {
+        self.drawCornerRadius()
+    }
     
     public func setUpLabels() {
         self.setupTitleLabel()
         self.setupAbilitiesLabel()
         self.drawShadow()
-        self.drawCornerRadius()
     }
     
     private func setupTitleLabel() {

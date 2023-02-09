@@ -341,6 +341,66 @@
             </objects>
             <point key="canvasLocation" x="-4475.36231884058" y="1384.8214285714284"/>
         </scene>
+        <!--Engineering View Controller-->
+        <scene sceneID="weT-tR-hyP">
+            <objects>
+                <viewController id="Ss7-dO-qZT" customClass="EngineeringViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L73-f4-Cm3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BpT-Oy-49F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7v-Pe-TcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2703" y="1402"/>
+        </scene>
+        <!--Licenses View Controller-->
+        <scene sceneID="H3w-x1-oK8">
+            <objects>
+                <viewController id="nXX-on-8fh" customClass="LicensesViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFA-Om-7yJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yKk-Pc-9ql"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTx-dW-3la" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1858" y="1402"/>
+        </scene>
+        <!--Retex View Controller-->
+        <scene sceneID="eM0-dj-Dbl">
+            <objects>
+                <viewController id="GeG-Ms-mjm" customClass="RetexViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q1H-l6-BO5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bcQ-7I-lLQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHx-GT-QaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1090" y="1402"/>
+        </scene>
+        <!--Hobbies View Controller-->
+        <scene sceneID="NhR-Oc-Mph">
+            <objects>
+                <viewController id="z4G-0b-6g8" customClass="HobbiesViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2R-GH-4HV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="p3A-hS-zDK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qt-WZ-OmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="1402"/>
+        </scene>
     </scenes>
     <resources>
         <image name="contact" width="25" height="25"/>

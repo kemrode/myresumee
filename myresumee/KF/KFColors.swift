@@ -20,4 +20,9 @@ extension UIColor {
     
 // Brown
     static let kfDarkBrown: UIColor = #colorLiteral(red: 0.6385211945, green: 0.4981747866, blue: 0, alpha: 1)
+    static let kfDarBrownTwentyFive: UIColor = UIColor(
+        red: CIColor(color: .kfDarkBrown).red,
+        green: CIColor(color: .kfDarkBrown).green,
+        blue: CIColor(color: .kfDarkBrown).blue,
+        alpha: 0.15)
 }

@@ -11,6 +11,10 @@
 		84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D86298BFE02000BB5E2 /* CurrentJobView.swift */; };
 		84557D89298C12C9000BB5E2 /* MyResumeeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */; };
 		84557D8B298C13D4000BB5E2 /* MyResumeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D8A298C13D4000BB5E2 /* MyResumeeNavigationController.swift */; };
+		84557D8D2995A31E000BB5E2 /* EngineeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D8C2995A31E000BB5E2 /* EngineeringViewController.swift */; };
+		84557D8F2995A33F000BB5E2 /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D8E2995A33F000BB5E2 /* LicensesViewController.swift */; };
+		84557D912995A359000BB5E2 /* RetexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D902995A359000BB5E2 /* RetexViewController.swift */; };
+		84557D932995A370000BB5E2 /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D922995A370000BB5E2 /* HobbiesViewController.swift */; };
 		84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6BF50298AB21500B6D3DD /* AppDelegate.swift */; };
 		84C6BF53298AB21500B6D3DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6BF52298AB21500B6D3DD /* SceneDelegate.swift */; };
 		84C6BF58298AB21500B6D3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C6BF56298AB21500B6D3DD /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 		84557D86298BFE02000BB5E2 /* CurrentJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJobView.swift; sourceTree = "<group>"; };
 		84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeeNavigationBar.swift; sourceTree = "<group>"; };
 		84557D8A298C13D4000BB5E2 /* MyResumeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeeNavigationController.swift; sourceTree = "<group>"; };
+		84557D8C2995A31E000BB5E2 /* EngineeringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringViewController.swift; sourceTree = "<group>"; };
+		84557D8E2995A33F000BB5E2 /* LicensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
+		84557D902995A359000BB5E2 /* RetexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexViewController.swift; sourceTree = "<group>"; };
+		84557D922995A370000BB5E2 /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
 		84C6BF4D298AB21500B6D3DD /* myresumee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myresumee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C6BF50298AB21500B6D3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C6BF52298AB21500B6D3DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,10 @@
 			children = (
 				84C6BF6A298AB9BE00B6D3DD /* MainHomeViewController.swift */,
 				84557D8A298C13D4000BB5E2 /* MyResumeeNavigationController.swift */,
+				84557D8C2995A31E000BB5E2 /* EngineeringViewController.swift */,
+				84557D8E2995A33F000BB5E2 /* LicensesViewController.swift */,
+				84557D902995A359000BB5E2 /* RetexViewController.swift */,
+				84557D922995A370000BB5E2 /* HobbiesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,11 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84557D8F2995A33F000BB5E2 /* LicensesViewController.swift in Sources */,
+				84557D932995A370000BB5E2 /* HobbiesViewController.swift in Sources */,
 				84C6BF71298ABDB300B6D3DD /* SelectedView.swift in Sources */,
+				84557D912995A359000BB5E2 /* RetexViewController.swift in Sources */,
 				84C6BF6D298ABA3500B6D3DD /* HeaderView.swift in Sources */,
 				84557D8B298C13D4000BB5E2 /* MyResumeeNavigationController.swift in Sources */,
 				84C6BF6B298AB9BE00B6D3DD /* MainHomeViewController.swift in Sources */,
 				84557D85298BFB2C000BB5E2 /* RandomAbilitiesView.swift in Sources */,
+				84557D8D2995A31E000BB5E2 /* EngineeringViewController.swift in Sources */,
 				84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */,
 				84C6BF6F298ABABB00B6D3DD /* HeaderPictureView.swift in Sources */,
 				84C6BF74298AC15200B6D3DD /* KFColors.swift in Sources */,
