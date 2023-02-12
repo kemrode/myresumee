@@ -19,18 +19,22 @@ class MainHomeViewController: UIViewController {
     @IBOutlet weak var retexSelectionView: SelectedView!
     @IBOutlet weak var hobbiesSelectionView: SelectedView!
     
+// MARK: - Properties
+    private var engineeringTapGesture: UITapGestureRecognizer!
+    private var licenseTapGesture: UITapGestureRecognizer!
+    private var retexTapGesture: UITapGestureRecognizer!
+    private var hobbiesTapGesture: UITapGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupInformationsToSelectionViews()
-        
         let appearance = UITabBarAppearance()
         appearance.configureWithTransparentBackground()
         appearance.backgroundColor = .kfMidBlue
         self.tabBarController?.tabBar.standardAppearance = appearance
         self.tabBarController?.tabBar.scrollEdgeAppearance = appearance
-        
-        
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,6 +56,15 @@ class MainHomeViewController: UIViewController {
         appearance.titleTextAttributes = titleAttribute as [NSAttributedString.Key : Any]
         self.navigationController?.navigationBar.standardAppearance = appearance
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    private func setupEngineeringTapGesture() {
+        self.engineeringTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToEngineeringView(_ :)))
+        self.engineeringSelectionView.addGestureRecognizer(self.engineeringTapGesture)
+    }
+    
+    @objc private func goToEngineeringView(_ sender: UITapGestureRecognizer) {
+        
     }
 // MARK: - Methods
     

@@ -15,6 +15,8 @@
 		84557D8F2995A33F000BB5E2 /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D8E2995A33F000BB5E2 /* LicensesViewController.swift */; };
 		84557D912995A359000BB5E2 /* RetexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D902995A359000BB5E2 /* RetexViewController.swift */; };
 		84557D932995A370000BB5E2 /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D922995A370000BB5E2 /* HobbiesViewController.swift */; };
+		84557D962998ECD4000BB5E2 /* EngineeringCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D952998ECD4000BB5E2 /* EngineeringCollectionView.swift */; };
+		84557D992998EF26000BB5E2 /* EngineeringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D982998EF26000BB5E2 /* EngineeringCell.swift */; };
 		84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6BF50298AB21500B6D3DD /* AppDelegate.swift */; };
 		84C6BF53298AB21500B6D3DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C6BF52298AB21500B6D3DD /* SceneDelegate.swift */; };
 		84C6BF58298AB21500B6D3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C6BF56298AB21500B6D3DD /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		84557D8E2995A33F000BB5E2 /* LicensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
 		84557D902995A359000BB5E2 /* RetexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexViewController.swift; sourceTree = "<group>"; };
 		84557D922995A370000BB5E2 /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
+		84557D952998ECD4000BB5E2 /* EngineeringCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringCollectionView.swift; sourceTree = "<group>"; };
+		84557D982998EF26000BB5E2 /* EngineeringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringCell.swift; sourceTree = "<group>"; };
 		84C6BF4D298AB21500B6D3DD /* myresumee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myresumee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C6BF50298AB21500B6D3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C6BF52298AB21500B6D3DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84557D942998EC55000BB5E2 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				84557D972998EEFA000BB5E2 /* Engineering */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		84557D972998EEFA000BB5E2 /* Engineering */ = {
+			isa = PBXGroup;
+			children = (
+				84557D952998ECD4000BB5E2 /* EngineeringCollectionView.swift */,
+				84557D982998EF26000BB5E2 /* EngineeringCell.swift */,
+			);
+			path = Engineering;
+			sourceTree = "<group>";
+		};
 		84C6BF44298AB21500B6D3DD = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +103,7 @@
 		84C6BF4F298AB21500B6D3DD /* myresumee */ = {
 			isa = PBXGroup;
 			children = (
+				84557D942998EC55000BB5E2 /* CollectionViews */,
 				84C6BF72298AC0F300B6D3DD /* KF */,
 				84C6BF69298AB9A200B6D3DD /* Views */,
 				84C6BF68298AB99C00B6D3DD /* Models */,
@@ -218,7 +240,9 @@
 				84C6BF6B298AB9BE00B6D3DD /* MainHomeViewController.swift in Sources */,
 				84557D85298BFB2C000BB5E2 /* RandomAbilitiesView.swift in Sources */,
 				84557D8D2995A31E000BB5E2 /* EngineeringViewController.swift in Sources */,
+				84557D962998ECD4000BB5E2 /* EngineeringCollectionView.swift in Sources */,
 				84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */,
+				84557D992998EF26000BB5E2 /* EngineeringCell.swift in Sources */,
 				84C6BF6F298ABABB00B6D3DD /* HeaderPictureView.swift in Sources */,
 				84C6BF74298AC15200B6D3DD /* KFColors.swift in Sources */,
 				84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */,
