@@ -28,6 +28,7 @@ class MainHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupInformationsToSelectionViews()
+        self.setupEngineeringTapGesture()
         let appearance = UITabBarAppearance()
         appearance.configureWithTransparentBackground()
         appearance.backgroundColor = .kfMidBlue
@@ -58,13 +59,20 @@ class MainHomeViewController: UIViewController {
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
     private func setupEngineeringTapGesture() {
         self.engineeringTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToEngineeringView(_ :)))
         self.engineeringSelectionView.addGestureRecognizer(self.engineeringTapGesture)
     }
     
     @objc private func goToEngineeringView(_ sender: UITapGestureRecognizer) {
-        
+        print("touché")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 // MARK: - Methods
     

@@ -22,9 +22,8 @@ class EngineeringCell: UICollectionViewListCell {
     override func updateConfiguration(using state: UICellConfigurationState) {
         let backgroundView = UIBackgroundConfiguration.listPlainCell().updated(for: state)
         let cellView = UIView()
-        cellView.backgroundColor = .red
+        cellView.backgroundColor = .kfLightBlueTwentyFive
         backgroundConfiguration?.customView = cellView
         self.backgroundConfiguration = backgroundConfiguration
-        
     }
 }

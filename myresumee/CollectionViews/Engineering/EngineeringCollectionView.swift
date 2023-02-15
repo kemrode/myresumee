@@ -8,8 +8,10 @@
 import Foundation
 import UIKit
 
-class EngineeringCollectionView: UICollectionView, UICollectionViewDelegateFlowLayout {
+class EngineeringCollectionView: UICollectionView, UICollectionViewDelegateFlowLayout  {
     
 // MARK: - Properties
     public var flowLayout: UICollectionLayoutListConfiguration!
+    
+    
 }
