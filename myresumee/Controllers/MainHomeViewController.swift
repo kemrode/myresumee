@@ -28,18 +28,11 @@ class MainHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupInformationsToSelectionViews()
-        self.setupEngineeringTapGesture()
-        let appearance = UITabBarAppearance()
-        appearance.configureWithTransparentBackground()
-        appearance.backgroundColor = .kfMidBlue
-        self.tabBarController?.tabBar.standardAppearance = appearance
-        self.tabBarController?.tabBar.scrollEdgeAppearance = appearance
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         self.setupViews()
+        self.addTapGestures()
+        self.setTabbarAppearance()
+        self.setNavigationBarAppearance()
+        self.headerView.layer.zPosition = 10
         self.abilitiesRandomView.setUpLabels()
         self.currentJobView.setupCurrentview()
         self.headerView.setHeaderViewElements()
@@ -47,8 +40,27 @@ class MainHomeViewController: UIViewController {
         self.licenceSelectionView.setSelectedView()
         self.retexSelectionView.setSelectedView()
         self.hobbiesSelectionView.setSelectedView()
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.headerView.headerPictureView.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.headerView.headerPictureView.isHidden = true
+    }
+    
+    private func setTabbarAppearance() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = .kfMidBlue
+        self.tabBarController?.tabBar.standardAppearance = appearance
+        self.tabBarController?.tabBar.scrollEdgeAppearance = appearance
+    }
+    
+    private func setNavigationBarAppearance() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
         appearance.backgroundColor = .kfMidBlue
@@ -59,8 +71,11 @@ class MainHomeViewController: UIViewController {
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    private func addTapGestures() {
+        self.setupEngineeringTapGesture()
+        self.setupLicenseTapGesture()
+        self.setupRetexTapGesture()
+        self.setupHobbiesTapGesture()
     }
     
     private func setupEngineeringTapGesture() {
@@ -68,8 +83,40 @@ class MainHomeViewController: UIViewController {
         self.engineeringSelectionView.addGestureRecognizer(self.engineeringTapGesture)
     }
     
+    private func setupLicenseTapGesture(){
+        self.licenseTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToLicensesView(_ :)))
+        self.licenceSelectionView.addGestureRecognizer(self.licenseTapGesture)
+    }
+    
+    private func setupRetexTapGesture() {
+        self.retexTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToRetexView(_ :)))
+        self.retexSelectionView.addGestureRecognizer(self.retexTapGesture)
+    }
+    
+    private func setupHobbiesTapGesture() {
+        self.hobbiesTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToHobbiesView(_ :)))
+        self.hobbiesSelectionView.addGestureRecognizer(self.hobbiesTapGesture)
+    }
+    
     @objc private func goToEngineeringView(_ sender: UITapGestureRecognizer) {
-        print("touché")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func goToLicensesView(_ sender: UITapGestureRecognizer){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func goToRetexView(_ sender: UITapGestureRecognizer){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func goToHobbiesView(_ sender: UITapGestureRecognizer){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
         self.navigationController?.pushViewController(vc, animated: true)

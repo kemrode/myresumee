@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8411898429A3E9B80021DDE1 /* LicensesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411898329A3E9B80021DDE1 /* LicensesCollectionView.swift */; };
 		8423985D299D375C00D86B7D /* Engineering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423985C299D375C00D86B7D /* Engineering.swift */; };
 		8423985F299D396F00D86B7D /* EngineeringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423985E299D396F00D86B7D /* EngineeringData.swift */; };
 		84239861299D887600D86B7D /* CollectionViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84239860299D887600D86B7D /* CollectionViewTitle.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8411898329A3E9B80021DDE1 /* LicensesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesCollectionView.swift; sourceTree = "<group>"; };
 		8423985C299D375C00D86B7D /* Engineering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engineering.swift; sourceTree = "<group>"; };
 		8423985E299D396F00D86B7D /* EngineeringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringData.swift; sourceTree = "<group>"; };
 		84239860299D887600D86B7D /* CollectionViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTitle.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8411898229A3E9930021DDE1 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				8411898329A3E9B80021DDE1 /* LicensesCollectionView.swift */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
 		8423985B299D374900D86B7D /* Engineering */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		84557D942998EC55000BB5E2 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
+				8411898229A3E9930021DDE1 /* Licenses */,
 				84557D972998EEFA000BB5E2 /* Engineering */,
 			);
 			path = CollectionViews;
@@ -248,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8411898429A3E9B80021DDE1 /* LicensesCollectionView.swift in Sources */,
 				8423985D299D375C00D86B7D /* Engineering.swift in Sources */,
 				84557D8F2995A33F000BB5E2 /* LicensesViewController.swift in Sources */,
 				84557D932995A370000BB5E2 /* HobbiesViewController.swift in Sources */,

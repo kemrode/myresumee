@@ -24,8 +24,7 @@ class HeaderView: UIView {
     private let _subtitleMessage = "Développeur informatique en alternance à CESI Rouen"
     
     override func draw(_ rect: CGRect) {
-        UIApplication.shared.keyWindow?.windowScene?.windows.first(where: {$0.isKeyWindow})?.addSubview(self.headerPictureView)
-    }
+        UIApplication.shared.keyWindow?.windowScene?.windows.first(where: {$0.isKeyWindow})?.addSubview(self.headerPictureView)}
     
     public func setHeaderViewElements() {
         self.setGeneralView()
