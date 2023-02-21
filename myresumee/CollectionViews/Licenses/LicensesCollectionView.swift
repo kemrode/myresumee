@@ -9,5 +9,8 @@ import UIKit
 
 class LicensesCollectionView: UICollectionView, UICollectionViewDelegateFlowLayout {
     
+// MARK: - Properties
+    
+    public var flowLayout: UICollectionViewCompositionalLayout!
 
 }

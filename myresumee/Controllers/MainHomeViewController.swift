@@ -106,7 +106,7 @@ class MainHomeViewController: UIViewController {
     
     @objc private func goToLicensesView(_ sender: UITapGestureRecognizer){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
+        let vc = storyboard.instantiateViewController(withIdentifier: "LicensesViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

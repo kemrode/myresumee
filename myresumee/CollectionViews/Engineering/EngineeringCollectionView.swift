@@ -12,6 +12,4 @@ class EngineeringCollectionView: UICollectionView, UICollectionViewDelegateFlowL
     
 // MARK: - Properties
     public var flowLayout: UICollectionLayoutListConfiguration!
-    
-    
 }

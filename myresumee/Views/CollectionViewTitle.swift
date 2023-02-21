@@ -28,14 +28,17 @@ class CollectionViewTitle: UIView {
         self.backgroundColor = .kfYellow
         self.setupImageView()
         self.setupTitleLabel()
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 13
+        self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     
     private func setupImageView() {
-        self.titleCVImageview.image = self.titleImage
         guard self.titleImage != nil else {
             self.titleCVImageview.image = UIImage(named: "unity")
             return
         }
+        self.titleCVImageview.image = self.titleImage
         self.titleCVImageview.contentMode = .center
     }
     
@@ -47,6 +50,7 @@ class CollectionViewTitle: UIView {
             self.titleCVLabel.text = "Aucun titre ?"
             return
         }
+        self.titleCVLabel.text = self.titleLabel
     }
     
 }
