@@ -20,7 +20,7 @@ class EngineeringCell: UICollectionViewListCell {
 // MARK: - Methods
     
     override func updateConfiguration(using state: UICellConfigurationState) {
-        let backgroundView = UIBackgroundConfiguration.listPlainCell().updated(for: state)
+        var backgroundView = UIBackgroundConfiguration.listPlainCell().updated(for: state)
         let cellView = UIView()
         cellView.backgroundColor = .kfLightBlueTwentyFive
         backgroundConfiguration?.customView = cellView

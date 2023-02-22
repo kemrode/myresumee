@@ -10,11 +10,9 @@ import UIKit
 class LicensesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
 // MARK: - IBOutlets
-
     @IBOutlet weak var licenseCollectionView: LicensesCollectionView!
     @IBOutlet weak var headerView: CollectionViewTitle!
 
-    
 // MARK: - Properties
     private var _data = LicenseData().allLicenses
     private var _typeOfLicense: [LicenseType]!
@@ -32,32 +30,32 @@ class LicensesViewController: UIViewController, UICollectionViewDelegate, UIColl
         super.viewWillAppear(animated)
         self.setupBackground()
         self.headerView.setupCollectionViewTitle()
+        self.licenseCollectionView.reloadData()
     }
     
 // MARK: - Methods
-    
     private func setupCollectionview() {
         self.licenseCollectionView.delegate = self
         self.licenseCollectionView.dataSource = self
         self.licenseCollectionView.showsVerticalScrollIndicator = false
-        self.licenseCollectionView.backgroundColor = .kfDarBrownTwentyFive
-        self.setupFlowLayout()
+        self.licenseCollectionView.backgroundColor = .clear
         self.licenseCollectionView.register(LicenseCategoryReusableView.self, forSupplementaryViewOfKind: "header", withReuseIdentifier: "licenseCategory")
+        self.setupFlowLayout()
     }
 
     private func setupFlowLayout() {
         var layoutListCOnfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
-//        layoutListCOnfiguration.backgroundColor = .clear
+        layoutListCOnfiguration.backgroundColor = .clear
         layoutListCOnfiguration.headerMode = .supplementary
         layoutListCOnfiguration.headerTopPadding = 15
         self.licenseCollectionView.collectionViewLayout = UICollectionViewCompositionalLayout.list(using: layoutListCOnfiguration)
     }
     
     private func setupBackground() {
-        let backView = UIView(frame: self.view.frame)
-        backView.backgroundColor = .kfDarBrownTwentyFive
-        self.view.addSubview(backView)
-        self.view.sendSubviewToBack(backView)
+        let backview = UIView(frame: self.view.frame)
+        backview.backgroundColor = .kfDarBrownTwentyFive
+        self.view.addSubview(backview)
+        self.view.sendSubviewToBack(backview)
         self.view.backgroundColor = .white
     }
     
@@ -77,7 +75,7 @@ class LicensesViewController: UIViewController, UICollectionViewDelegate, UIColl
             emptyHeaderView.backgroundColor = .red
             return emptyHeaderView
         }
-        headerView.backgroundColor = .kfDarBrownTwentyFive
+        headerView.backgroundColor = .clear
         headerView.sectionName = self._typeOfLicense[indexPath.section].data
         headerView.setSectionNameLabel()
         return headerView
@@ -89,6 +87,8 @@ class LicensesViewController: UIViewController, UICollectionViewDelegate, UIColl
         let license = data[indexPath.item]
         cell.licenseImageView.image = license.image
         cell.licenseTitle.text = license.title
+        cell.yearOfLicenceLb.text = license.year
+        cell.backgroundColor = .kfLightBlueTwentyFive
         return cell
     }
 }

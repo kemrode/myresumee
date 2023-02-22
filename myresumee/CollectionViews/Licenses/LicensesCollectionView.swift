@@ -11,6 +11,6 @@ class LicensesCollectionView: UICollectionView, UICollectionViewDelegateFlowLayo
     
 // MARK: - Properties
     
-    public var flowLayout: UICollectionViewCompositionalLayout!
+    public var flowLayout: UICollectionViewFlowLayout!
 
 }

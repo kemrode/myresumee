@@ -12,8 +12,9 @@ class LicenseCell: UICollectionViewCell {
 // MARK: - IBOutlet
     @IBOutlet weak var licenseImageView: UIImageView!
     @IBOutlet weak var licenseTitle: UILabel!
-    
-// MARK: - Properties
+    @IBOutlet weak var yearOfLicenceLb: UILabel!
+
+    // MARK: - Properties
 
 // MARK: - Methods
     
@@ -22,6 +23,7 @@ class LicenseCell: UICollectionViewCell {
         let cellView = UIView()
         cellView.backgroundColor = .kfLightBlueTwentyFive
         self.setLicenseTitleLabel()
+        self.setYearLicenseLabel()
         backgroundView.customView = cellView
         self.backgroundConfiguration = backgroundConfiguration
     }
@@ -30,6 +32,16 @@ class LicenseCell: UICollectionViewCell {
         self.licenseTitle.numberOfLines = 0
         self.licenseTitle.lineBreakMode = .byWordWrapping
         self.licenseTitle.textAlignment = .left
+        self.licenseTitle.font = .systemFont(ofSize: 14, weight: .bold)
+        self.licenseTitle.textColor = .kfMidBlue
+    }
+    
+    private func setYearLicenseLabel() {
+        self.yearOfLicenceLb.numberOfLines = 0
+        self.yearOfLicenceLb.lineBreakMode = .byWordWrapping
+        self.yearOfLicenceLb.textAlignment = .center
+        self.yearOfLicenceLb.font = .systemFont(ofSize: 14, weight: .bold)
+        self.yearOfLicenceLb.textColor = .kfMidBlue
     }
     
 }

@@ -25,7 +25,7 @@ class CollectionViewTitle: UIView {
     override func draw(_ rect: CGRect) {}
     
     public func setupCollectionViewTitle() {
-        self.backgroundColor = .kfYellow
+        self.backgroundColor = .clear
         self.setupImageView()
         self.setupTitleLabel()
         self.clipsToBounds = true
