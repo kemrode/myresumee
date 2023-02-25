@@ -17,7 +17,6 @@ class LicenseCell: UICollectionViewCell {
     // MARK: - Properties
 
 // MARK: - Methods
-    
     override func updateConfiguration(using state: UICellConfigurationState) {
         var backgroundView = UIBackgroundConfiguration.listPlainCell().updated(for: state)
         let cellView = UIView()
@@ -25,7 +24,7 @@ class LicenseCell: UICollectionViewCell {
         self.setLicenseTitleLabel()
         self.setYearLicenseLabel()
         backgroundView.customView = cellView
-        self.backgroundConfiguration = backgroundConfiguration
+        self.backgroundConfiguration = backgroundView
     }
     
     private func setLicenseTitleLabel() {

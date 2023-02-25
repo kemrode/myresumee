@@ -20,10 +20,24 @@ class EngineeringCell: UICollectionViewListCell {
 // MARK: - Methods
     
     override func updateConfiguration(using state: UICellConfigurationState) {
-        var backgroundView = UIBackgroundConfiguration.listPlainCell().updated(for: state)
+        var backgroundConfiguration = UIBackgroundConfiguration.listPlainCell().updated(for: state)
         let cellView = UIView()
         cellView.backgroundColor = .kfLightBlueTwentyFive
-        backgroundConfiguration?.customView = cellView
+        backgroundConfiguration.customView = cellView
         self.backgroundConfiguration = backgroundConfiguration
+        self.setImage()
+        self.setTitle()
+    }
+    
+    private func setImage() {
+        self.image.contentMode = .scaleAspectFit
+    }
+    
+    private func setTitle() {
+        self.title.numberOfLines = 0
+        self.title.lineBreakMode = .byWordWrapping
+        self.title.textAlignment = .center
+        self.title.font = .systemFont(ofSize: 14, weight: .bold)
+        self.title.textColor = .kfMidBlue
     }
 }

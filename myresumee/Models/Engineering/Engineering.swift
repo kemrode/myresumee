@@ -11,4 +11,5 @@ import UIKit
 struct Engineering {
     var image: UIImage
     var title: String
+    var engineeringType: EngineeringType
 }

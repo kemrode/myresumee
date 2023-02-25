@@ -388,13 +388,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K5g-Kg-XEf">
                                     <size key="itemSize" width="374" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="engineeringCell" id="gpX-3I-ZOT" customClass="EngineeringCell" customModule="myresumee" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
+                                        <rect key="frame" x="0.0" y="50" width="374" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bYJ-CV-D4D">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
@@ -428,6 +428,27 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="engineeringReusableView" id="hPE-N2-HTc" customClass="EngineeringReusableView" customModule="myresumee" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beC-xB-tmQ">
+                                            <rect key="frame" x="8" y="8" width="358" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="beC-xB-tmQ" firstAttribute="top" secondItem="hPE-N2-HTc" secondAttribute="topMargin" id="K5t-Et-iMj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="beC-xB-tmQ" secondAttribute="trailing" id="cTb-fe-he9"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="beC-xB-tmQ" secondAttribute="bottom" id="tts-OD-HsV"/>
+                                        <constraint firstItem="beC-xB-tmQ" firstAttribute="leading" secondItem="hPE-N2-HTc" secondAttribute="leadingMargin" id="zBE-iw-5Ct"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="sectionTitleLb" destination="beC-xB-tmQ" id="tvH-bW-9ja"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BpT-Oy-49F"/>

@@ -16,6 +16,8 @@
 		8423985D299D375C00D86B7D /* Engineering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423985C299D375C00D86B7D /* Engineering.swift */; };
 		8423985F299D396F00D86B7D /* EngineeringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423985E299D396F00D86B7D /* EngineeringData.swift */; };
 		84239861299D887600D86B7D /* CollectionViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84239860299D887600D86B7D /* CollectionViewTitle.swift */; };
+		84524BA829AAACF800966A4C /* EngineeringReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BA729AAACF800966A4C /* EngineeringReusableView.swift */; };
+		84524BAA29AAADFA00966A4C /* EngineeringType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BA929AAADFA00966A4C /* EngineeringType.swift */; };
 		84557D85298BFB2C000BB5E2 /* RandomAbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */; };
 		84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D86298BFE02000BB5E2 /* CurrentJobView.swift */; };
 		84557D89298C12C9000BB5E2 /* MyResumeeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */; };
@@ -49,6 +51,8 @@
 		8423985C299D375C00D86B7D /* Engineering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engineering.swift; sourceTree = "<group>"; };
 		8423985E299D396F00D86B7D /* EngineeringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringData.swift; sourceTree = "<group>"; };
 		84239860299D887600D86B7D /* CollectionViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTitle.swift; sourceTree = "<group>"; };
+		84524BA729AAACF800966A4C /* EngineeringReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringReusableView.swift; sourceTree = "<group>"; };
+		84524BA929AAADFA00966A4C /* EngineeringType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringType.swift; sourceTree = "<group>"; };
 		84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAbilitiesView.swift; sourceTree = "<group>"; };
 		84557D86298BFE02000BB5E2 /* CurrentJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJobView.swift; sourceTree = "<group>"; };
 		84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeeNavigationBar.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				8423985C299D375C00D86B7D /* Engineering.swift */,
 				8423985E299D396F00D86B7D /* EngineeringData.swift */,
+				84524BA929AAADFA00966A4C /* EngineeringType.swift */,
 			);
 			path = Engineering;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			children = (
 				84557D952998ECD4000BB5E2 /* EngineeringCollectionView.swift */,
 				84557D982998EF26000BB5E2 /* EngineeringCell.swift */,
+				84524BA729AAACF800966A4C /* EngineeringReusableView.swift */,
 			);
 			path = Engineering;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 				84C6BF71298ABDB300B6D3DD /* SelectedView.swift in Sources */,
 				84557D912995A359000BB5E2 /* RetexViewController.swift in Sources */,
 				8411898D29A4F0FF0021DDE1 /* LicenseCategoryReusableView.swift in Sources */,
+				84524BA829AAACF800966A4C /* EngineeringReusableView.swift in Sources */,
 				8411898629A4E6010021DDE1 /* LicenseCell.swift in Sources */,
 				84C6BF6D298ABA3500B6D3DD /* HeaderView.swift in Sources */,
 				84557D8B298C13D4000BB5E2 /* MyResumeeNavigationController.swift in Sources */,
@@ -302,6 +309,7 @@
 				84557D992998EF26000BB5E2 /* EngineeringCell.swift in Sources */,
 				8423985F299D396F00D86B7D /* EngineeringData.swift in Sources */,
 				84C6BF6F298ABABB00B6D3DD /* HeaderPictureView.swift in Sources */,
+				84524BAA29AAADFA00966A4C /* EngineeringType.swift in Sources */,
 				8411898929A4EB160021DDE1 /* LicenseData.swift in Sources */,
 				84C6BF74298AC15200B6D3DD /* KFColors.swift in Sources */,
 				84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */,
