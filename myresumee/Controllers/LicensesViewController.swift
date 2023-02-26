@@ -14,7 +14,8 @@ class LicensesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var headerView: CollectionViewTitle!
 
 // MARK: - Properties
-    private var _data = LicenseData().allLicenses
+    private var _dataMilitaryLicenses = LicenseData().allMilitaryLicenses
+    private var _dataCivilianLicenses = LicenseData().allCiviliansLicenses
     private var _typeOfLicense: [LicenseType]!
 
 // MARK: - Life Cycle
@@ -66,7 +67,14 @@ class LicensesViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self._data[section].count
+        switch section {
+            case 0:
+                return self._dataCivilianLicenses.count
+            case 1:
+                return self._dataMilitaryLicenses.count
+            default:
+                return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -83,12 +91,25 @@ class LicensesViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "licenseCell", for: indexPath) as! LicenseCell
-        let data = self._data[indexPath.section]
-        let license = data[indexPath.item]
-        cell.licenseImageView.image = license.image
-        cell.licenseTitle.text = license.title
-        cell.yearOfLicenceLb.text = license.year
-        cell.backgroundColor = .kfLightBlueTwentyFive
-        return cell
+        switch self._typeOfLicense[indexPath.section].data {
+            case LicenseType.civilian.data:
+                let data = self._dataCivilianLicenses[indexPath.item]
+                self.configurationCellWithData(cell: cell, data: data)
+                return cell
+            case LicenseType.military.data:
+                let data = self._dataMilitaryLicenses[indexPath.item]
+                self.configurationCellWithData(cell: cell, data: data)
+                return cell
+            default:
+                let data = self._dataCivilianLicenses[indexPath.item]
+                self.configurationCellWithData(cell: cell, data: data)
+                return cell
+        }
+    }
+    
+    private func configurationCellWithData(cell: LicenseCell, data: License) {
+        cell.licenseImageView.image = data.image
+        cell.licenseTitle.text = data.title
+        cell.yearOfLicenceLb.text = data.year
     }
 }

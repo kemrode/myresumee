@@ -17,4 +17,10 @@ class RetexReusableView: UICollectionReusableView {
     public var sectionName: String!
 
 // MARK: - Constructor
+    
+    public func setSectionNameLabel() {
+        self.sectionTitleLabel.font = .systemFont(ofSize: 24, weight: .bold)
+        self.sectionTitleLabel.textColor = .kfDarkBlue
+        self.sectionTitleLabel.text = self.sectionName
+    }
 }

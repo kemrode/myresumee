@@ -111,11 +111,6 @@ class EngineeringViewController: UIViewController, UICollectionViewDelegate, UIC
     private func configurationCellWithData(cell: EngineeringCell, data: Engineering){
         cell.image.image = data.image
         cell.title.text = data.title
-        cell.layer.masksToBounds = false
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowOffset = CGSize(width: 2, height: 4)
-        cell.layer.shadowOpacity = 0.2
-        cell.layer.shadowRadius = 5
     }
     
 }

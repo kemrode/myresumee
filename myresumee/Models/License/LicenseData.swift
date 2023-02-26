@@ -5,7 +5,6 @@
 //  Created by kevin fichou on 21/02/2023.
 //
 
-import Foundation
 import UIKit
 
 class LicenseData {

@@ -14,8 +14,6 @@ class LicenseCell: UICollectionViewCell {
     @IBOutlet weak var licenseTitle: UILabel!
     @IBOutlet weak var yearOfLicenceLb: UILabel!
 
-    // MARK: - Properties
-
 // MARK: - Methods
     override func updateConfiguration(using state: UICellConfigurationState) {
         var backgroundView = UIBackgroundConfiguration.listPlainCell().updated(for: state)

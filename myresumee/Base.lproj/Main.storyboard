@@ -654,7 +654,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KrI-iQ-Qco" customClass="RetexCell" customModule="myresumee" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="retexCell" id="KrI-iQ-Qco" customClass="RetexCell" customModule="myresumee" customModuleProvider="target">
                                         <rect key="frame" x="9.6666666666666661" y="50" width="395" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wbv-wi-l0x">
@@ -689,7 +689,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xek-oB-kTZ" customClass="RetexReusableView" customModule="myresumee" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="retexReusableView" id="xek-oB-kTZ" customClass="RetexReusableView" customModule="myresumee" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -725,10 +725,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="85m-qc-UX3"/>
+                    <connections>
+                        <segue destination="YbP-ZO-fET" kind="show" id="VvE-Ro-eRF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHx-GT-QaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4342.0289855072469" y="2331.6964285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sxr-gi-DFt">
+            <objects>
+                <viewController id="YbP-ZO-fET" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n7x-Cm-3Yu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="k41-nK-dqg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sgr-dU-akW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51s-aE-Wbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4342" y="3042"/>
         </scene>
         <!--Hobbies View Controller-->
         <scene sceneID="NhR-Oc-Mph">

@@ -21,6 +21,9 @@
 		84524BAD29AABB2700966A4C /* RetexReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BAC29AABB2700966A4C /* RetexReusableView.swift */; };
 		84524BB229AABB8300966A4C /* RetexCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BB129AABB8300966A4C /* RetexCollectionView.swift */; };
 		84524BB429AABBAB00966A4C /* RetexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BB329AABBAB00966A4C /* RetexCell.swift */; };
+		84524BB729AC027000966A4C /* Retex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BB629AC027000966A4C /* Retex.swift */; };
+		84524BB929AC02B600966A4C /* RetexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BB829AC02B600966A4C /* RetexType.swift */; };
+		84524BBB29AC032800966A4C /* RetexData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84524BBA29AC032800966A4C /* RetexData.swift */; };
 		84557D85298BFB2C000BB5E2 /* RandomAbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */; };
 		84557D87298BFE02000BB5E2 /* CurrentJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D86298BFE02000BB5E2 /* CurrentJobView.swift */; };
 		84557D89298C12C9000BB5E2 /* MyResumeeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */; };
@@ -59,6 +62,9 @@
 		84524BAC29AABB2700966A4C /* RetexReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexReusableView.swift; sourceTree = "<group>"; };
 		84524BB129AABB8300966A4C /* RetexCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexCollectionView.swift; sourceTree = "<group>"; };
 		84524BB329AABBAB00966A4C /* RetexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexCell.swift; sourceTree = "<group>"; };
+		84524BB629AC027000966A4C /* Retex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retex.swift; sourceTree = "<group>"; };
+		84524BB829AC02B600966A4C /* RetexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexType.swift; sourceTree = "<group>"; };
+		84524BBA29AC032800966A4C /* RetexData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetexData.swift; sourceTree = "<group>"; };
 		84557D84298BFB2C000BB5E2 /* RandomAbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAbilitiesView.swift; sourceTree = "<group>"; };
 		84557D86298BFE02000BB5E2 /* CurrentJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentJobView.swift; sourceTree = "<group>"; };
 		84557D88298C12C9000BB5E2 /* MyResumeeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeeNavigationBar.swift; sourceTree = "<group>"; };
@@ -157,6 +163,16 @@
 			path = RetexViews;
 			sourceTree = "<group>";
 		};
+		84524BB529AC025D00966A4C /* Retex */ = {
+			isa = PBXGroup;
+			children = (
+				84524BB629AC027000966A4C /* Retex.swift */,
+				84524BB829AC02B600966A4C /* RetexType.swift */,
+				84524BBA29AC032800966A4C /* RetexData.swift */,
+			);
+			path = Retex;
+			sourceTree = "<group>";
+		};
 		84557D942998EC55000BB5E2 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +243,7 @@
 		84C6BF68298AB99C00B6D3DD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				84524BB529AC025D00966A4C /* Retex */,
 				8411898729A4EB000021DDE1 /* License */,
 				8423985B299D374900D86B7D /* Engineering */,
 			);
@@ -333,12 +350,14 @@
 				8411898429A3E9B80021DDE1 /* LicensesCollectionView.swift in Sources */,
 				8423985D299D375C00D86B7D /* Engineering.swift in Sources */,
 				8411898B29A4EB6A0021DDE1 /* License.swift in Sources */,
+				84524BBB29AC032800966A4C /* RetexData.swift in Sources */,
 				84557D8F2995A33F000BB5E2 /* LicensesViewController.swift in Sources */,
 				84557D932995A370000BB5E2 /* HobbiesViewController.swift in Sources */,
 				84524BB229AABB8300966A4C /* RetexCollectionView.swift in Sources */,
 				8411898F29A4FE400021DDE1 /* LicenseType.swift in Sources */,
 				84C6BF71298ABDB300B6D3DD /* SelectedView.swift in Sources */,
 				84557D912995A359000BB5E2 /* RetexViewController.swift in Sources */,
+				84524BB929AC02B600966A4C /* RetexType.swift in Sources */,
 				8411898D29A4F0FF0021DDE1 /* LicenseCategoryReusableView.swift in Sources */,
 				84524BA829AAACF800966A4C /* EngineeringReusableView.swift in Sources */,
 				8411898629A4E6010021DDE1 /* LicenseCell.swift in Sources */,
@@ -358,6 +377,7 @@
 				84C6BF74298AC15200B6D3DD /* KFColors.swift in Sources */,
 				84C6BF51298AB21500B6D3DD /* AppDelegate.swift in Sources */,
 				84C6BF5B298AB21500B6D3DD /* myresumee.xcdatamodeld in Sources */,
+				84524BB729AC027000966A4C /* Retex.swift in Sources */,
 				84239861299D887600D86B7D /* CollectionViewTitle.swift in Sources */,
 				84557D89298C12C9000BB5E2 /* MyResumeeNavigationBar.swift in Sources */,
 				84C6BF53298AB21500B6D3DD /* SceneDelegate.swift in Sources */,
