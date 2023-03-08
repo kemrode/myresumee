@@ -112,7 +112,7 @@ class MainHomeViewController: UIViewController {
     
     @objc private func goToRetexView(_ sender: UITapGestureRecognizer){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "engineeringViewController")
+        let vc = storyboard.instantiateViewController(withIdentifier: "RetexViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

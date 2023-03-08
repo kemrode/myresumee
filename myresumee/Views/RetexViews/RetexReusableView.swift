@@ -22,5 +22,7 @@ class RetexReusableView: UICollectionReusableView {
         self.sectionTitleLabel.font = .systemFont(ofSize: 24, weight: .bold)
         self.sectionTitleLabel.textColor = .kfDarkBlue
         self.sectionTitleLabel.text = self.sectionName
+        self.sectionTitleLabel.numberOfLines = 0
+        self.sectionTitleLabel.lineBreakMode = .byWordWrapping
     }
 }

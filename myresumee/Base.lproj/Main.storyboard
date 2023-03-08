@@ -614,12 +614,12 @@
         <!--Retex View Controller-->
         <scene sceneID="eM0-dj-Dbl">
             <objects>
-                <viewController id="GeG-Ms-mjm" customClass="RetexViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RetexViewController" id="GeG-Ms-mjm" customClass="RetexViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q1H-l6-BO5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="kRJ-rZ-44K">
+                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="kRJ-rZ-44K" customClass="CollectionViewTitle" customModule="myresumee" customModuleProvider="target">
                                 <rect key="frame" x="21" y="108" width="372" height="21"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3jl-aq-57z">
@@ -643,6 +643,10 @@
                                     <constraint firstItem="08w-aS-KjP" firstAttribute="top" secondItem="kRJ-rZ-44K" secondAttribute="top" id="pJN-9c-HDK"/>
                                     <constraint firstItem="3jl-aq-57z" firstAttribute="top" secondItem="kRJ-rZ-44K" secondAttribute="top" constant="5" id="qKJ-v3-s6B"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleCVImageview" destination="3jl-aq-57z" id="tFa-9A-XQJ"/>
+                                    <outlet property="titleCVLabel" destination="08w-aS-KjP" id="xJn-5p-z9c"/>
+                                </connections>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="748" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BOD-tm-Y7A" customClass="RetexCollectionView" customModule="myresumee" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="129" width="414" height="767"/>
@@ -726,24 +730,77 @@
                     </view>
                     <navigationItem key="navigationItem" id="85m-qc-UX3"/>
                     <connections>
-                        <segue destination="YbP-ZO-fET" kind="show" id="VvE-Ro-eRF"/>
+                        <outlet property="headerView" destination="kRJ-rZ-44K" id="t2L-co-fyY"/>
+                        <outlet property="retexCollectionView" destination="BOD-tm-Y7A" id="q9d-sy-vnm"/>
+                        <segue destination="YbP-ZO-fET" kind="show" identifier="goToRetexSelectedSegue" id="VvE-Ro-eRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHx-GT-QaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4342.0289855072469" y="2331.6964285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Retex Selected View Controller-->
         <scene sceneID="sxr-gi-DFt">
             <objects>
-                <viewController id="YbP-ZO-fET" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="retexSelectedViewController" id="YbP-ZO-fET" customClass="RetexSelectedViewController" customModule="myresumee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n7x-Cm-3Yu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J3J-mY-kOi">
+                                <rect key="frame" x="25" y="133" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="jJp-Ud-AoJ"/>
+                                    <constraint firstAttribute="height" constant="55" id="lK6-GD-ioi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3w-UR-2mW">
+                                <rect key="frame" x="90" y="133" width="234" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxf-YJ-ipr">
+                                <rect key="frame" x="326" y="133" width="78" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6Fg-Si-y08">
+                                <rect key="frame" x="25" y="238" width="344" height="525"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="k41-nK-dqg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Fg-Si-y08" firstAttribute="top" secondItem="jxf-YJ-ipr" secondAttribute="bottom" constant="50" id="FRn-ak-zYW"/>
+                            <constraint firstItem="jxf-YJ-ipr" firstAttribute="leading" secondItem="z3w-UR-2mW" secondAttribute="trailing" constant="2" id="IKs-CT-9AZ"/>
+                            <constraint firstItem="z3w-UR-2mW" firstAttribute="centerX" secondItem="n7x-Cm-3Yu" secondAttribute="centerX" id="NHn-6I-BYe"/>
+                            <constraint firstItem="J3J-mY-kOi" firstAttribute="leading" secondItem="k41-nK-dqg" secondAttribute="leading" constant="25" id="Ot5-l8-ETP"/>
+                            <constraint firstItem="k41-nK-dqg" firstAttribute="bottom" secondItem="6Fg-Si-y08" secondAttribute="bottom" constant="50" id="Q4E-za-p7G"/>
+                            <constraint firstItem="J3J-mY-kOi" firstAttribute="top" secondItem="k41-nK-dqg" secondAttribute="top" constant="45" id="V7E-dg-w0y"/>
+                            <constraint firstItem="6Fg-Si-y08" firstAttribute="top" secondItem="J3J-mY-kOi" secondAttribute="bottom" constant="50" id="Xsl-FI-7sc"/>
+                            <constraint firstItem="z3w-UR-2mW" firstAttribute="top" secondItem="k41-nK-dqg" secondAttribute="top" constant="45" id="a5Z-i5-Xwf"/>
+                            <constraint firstItem="6Fg-Si-y08" firstAttribute="top" secondItem="z3w-UR-2mW" secondAttribute="bottom" constant="50" id="cbm-Mh-I2b"/>
+                            <constraint firstItem="jxf-YJ-ipr" firstAttribute="top" secondItem="k41-nK-dqg" secondAttribute="top" constant="45" id="hBn-Fy-pow"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Fg-Si-y08" secondAttribute="trailing" constant="25" id="iWO-FO-9op"/>
+                            <constraint firstItem="6Fg-Si-y08" firstAttribute="leading" secondItem="k41-nK-dqg" secondAttribute="leading" constant="25" id="ptj-4c-RbQ"/>
+                            <constraint firstItem="z3w-UR-2mW" firstAttribute="leading" secondItem="J3J-mY-kOi" secondAttribute="trailing" constant="10" id="z1d-7a-K6l"/>
+                            <constraint firstItem="k41-nK-dqg" firstAttribute="trailing" secondItem="jxf-YJ-ipr" secondAttribute="trailing" constant="10" id="zIG-Hv-a3W"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sgr-dU-akW"/>
+                    <connections>
+                        <outlet property="retexExplanations" destination="6Fg-Si-y08" id="Fwg-H8-fWF"/>
+                        <outlet property="retexImageView" destination="J3J-mY-kOi" id="837-BX-4hY"/>
+                        <outlet property="retexTitleLabel" destination="z3w-UR-2mW" id="R39-n8-yOX"/>
+                        <outlet property="retexTypeLabel" destination="jxf-YJ-ipr" id="Y3t-iK-Brg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51s-aE-Wbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
